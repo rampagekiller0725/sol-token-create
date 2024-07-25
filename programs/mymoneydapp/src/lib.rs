@@ -24,7 +24,7 @@ pub mod mymoneydapp {
         authority_type: AuthorityType,
         new_authority: Option<Pubkey>,
     ) -> Result<()> {
-        token::set_authority(ctx.accounts.into(), authority_type.into(), new_authority)
+        token::set_authority(ctx.accounts.into(), authority_type, new_authority)
     }
 }
 
